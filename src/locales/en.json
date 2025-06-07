@@ -1,0 +1,145 @@
+{
+  "navbar": {
+    "inicio": "Home",
+    "proyectos": "Projects",
+    "contacto": "Contact"
+  },
+  "sobre-mi": {
+    "titulo": "ABOUT ME",
+    "descripcion": "I'm a FrontEnd Developer with experience in React.js and WordPress, focused on creating modern, accessible, and user-centered interfaces. I stood out during my training at Coderhouse in the JavaScript, React.js, and WordPress courses, where I gained skills in building dynamic websites and online stores using WooCommerce. I'm passionate about turning ideas into functional digital experiences using technologies like HTML5, CSS3, JavaScript, and Bootstrap. I also have experience in technical SEO with Yoast SEO (meta descriptions, keywords, Open Graph), and in implementing web accessibility following WCAG guidelines to ensure inclusive and well-ranked websites.",
+    "cvBoton": "Take a look at my CV",
+    "cvUrl": "/pdfs/cvEulerJuanEN.pdf"
+  },
+  "tecnologias": {
+    "titulo": "TECHNOLOGIES"
+  },
+  "educacion": {
+    "titulo": "EDUCATION",
+    "textoNota": "Final grade: ",
+    "textoTemario": "Topics: ",
+    "textoCertificado": "View certificate",
+    "wordpress": {
+      "titulo": "WordPress Course",
+      "institucion": "Coderhouse",
+      "fecha": "January to February 2025",
+      "temas": [
+        "Posts",
+        "Plugins",
+        "Themes",
+        "Child themes",
+        "Elementor",
+        "WooCommerce",
+        "Backups and servers",
+        "Migration"
+      ]
+    },
+    "react": {
+      "titulo": "React.js Course",
+      "institucion": "Coderhouse",
+      "fecha": "September to November 2024",
+      "temas": [
+        "JSX and transpiling",
+        "Components",
+        "Promises",
+        "Async handling",
+        "Map",
+        "API consumption",
+        "Hooks",
+        "Children",
+        "Patterns",
+        "Routing and navigation",
+        "Events",
+        "Context",
+        "Rendering techniques",
+        "Firebase"
+      ]
+    },
+    "javascript": {
+      "titulo": "JavaScript Course",
+      "institucion": "Coderhouse",
+      "fecha": "June to August 2024",
+      "temas": [
+        "Syntax and variables",
+        "Control flow",
+        "Loops and iterations",
+        "Functions",
+        "Objects",
+        "Arrays",
+        "Higher-order functions",
+        "DOM",
+        "Events",
+        "Storage and JSON",
+        "Advanced operators",
+        "Libraries",
+        "Async and promises",
+        "AJAX and fetch",
+        "Frameworks",
+        "Node.js"
+      ]
+    },
+    "desarrollo-web": {
+      "titulo": "Web Development Course",
+      "institucion": "Coderhouse",
+      "fecha": "February to May 2024",
+      "temas": [
+        "HTML",
+        "CSS",
+        "Flexbox",
+        "Grids",
+        "Media queries",
+        "Pseudoclasses and BEM",
+        "Frameworks",
+        "Bootstrap",
+        "Git",
+        "GitHub",
+        "SASS",
+        "Nesting",
+        "Partials",
+        "Animations",
+        "SEO",
+        "Servers"
+      ]
+    }
+  },
+  "servicios": {
+    "titulo": "SERVICES",
+    "tarjetas": [
+      {
+        "titulo": "Custom web development",
+        "descripcion": "Modern, fast and custom websites using HTML, CSS, JavaScript and React. Responsive design and SEO optimization.",
+        "imgAlt": "Web development illustration"
+      },
+      {
+        "titulo": "WordPress sites",
+        "descripcion": "Installation, customization and optimization of WordPress sites. Perfect for blogs, business sites and landing pages.",
+        "imgAlt": "WordPress illustration"
+      }
+    ],
+    "cta": "Want a professional website? Contact me for a free quote!",
+    "boton": "LET'S TALK"
+  },
+  "proyectos": {
+    "titulo": "PROJECTS",
+    "botonInfo": "More details"
+  },
+  "proyectos-detalle": {
+    "volver": "← Back to projects"
+  },
+  "footer": {
+    "derechos": "All rights reserved"
+  },
+  "contacto": {
+    "titulo": "CONTACT",
+    "intro": "If you'd like to request a quote or contact me with a job offer, feel free to connect with me on LinkedIn or send me an email!",
+    "horario": "I'm available for meetings on business days from 10:00 AM to 6:00 PM (GMT-3).",
+    "linkedin": "Connect with me on LinkedIn",
+    "github": "Check out my repositories on GitHub",
+    "mail": "Contact me via email"
+  },
+  "popup": {
+    "titulo": "Did you like what you saw?",
+    "mensaje": "Connect with me on LinkedIn or send me an email before you go!",
+    "botonMail": "Email",
+    "botonLinkedin": "LinkedIn"
+  }
+}

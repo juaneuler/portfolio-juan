@@ -1,0 +1,59 @@
+.portada {
+    min-height: 80vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+        url('/src/assets/bannerPortada.jpg') center/cover no-repeat;
+        background-attachment: fixed;
+    color: white;
+    overflow: hidden;
+
+    .portadaOverlay {
+        inset: 0;
+        background: linear-gradient(120deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+        z-index: 1;
+    }
+
+    .portadaContenido {
+        z-index: 2;
+        text-align: center;
+
+        .titulo {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 1ch;
+            height: 1.2em;
+            background: currentColor;
+            margin-left: 2px;
+            animation: blink 0.7s steps(1) infinite;
+            vertical-align: bottom;
+        }
+
+        .subtitulo {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        @keyframes blink {
+
+            0%,
+            50% {
+                opacity: 1;
+            }
+
+            51%,
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+}

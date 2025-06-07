@@ -1,0 +1,132 @@
+@use './variables' as *;
+
+.proyectos {
+    padding: 20px;
+
+    h2 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.2rem;
+        padding: 10px;
+        margin-bottom: 1rem;
+        color: $color-negro-claro;
+        background-color: $color-blanco;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .proyectosContenedor {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+
+        .proyectoTarjeta {
+            background: $color-gris;
+            border: 2px solid $color-verde-servicio;
+            border-radius: 5px;
+            color: $color-negro-claro;
+            width: 90%;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1.5rem;
+            box-sizing: border-box;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 12px rgba(34, 40, 49, 0.07);
+
+            .proyectoImg {
+                width: 100%;
+                max-width: 700px;
+                height: auto;
+                margin-bottom: 1.5rem;
+                object-fit: cover;
+            }
+
+            .proyectoImgMovil {
+                display: none;
+            }
+
+            .proyectoTitulo {
+                color: $color-negro;
+                font-size: 1.7rem;
+                font-weight: 700;
+                margin-bottom: 0.7rem;
+                text-align: center;
+            }
+
+            .proyectoDescripcion {
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            .proyectoTecnologias {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.7rem;
+                justify-content: center;
+                margin-bottom: 1.2rem;
+
+                .proyectoTecnologia {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.4rem;
+                    background: $color-blanco;
+                    border-radius: 4px;
+                    padding: 0.2rem 0.7rem;
+                    font-size: 1rem;
+
+                    .proyectoTecnologiaLogo {
+                        width: 28px;
+                        height: 28px;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            .proyectoMasInfo {
+                display: inline-block;
+                background: $color-azul-claro;
+                color: $color-blanco;
+                font-weight: 700;
+                padding: 0.8rem 2.2rem;
+                border: none;
+                border-radius: 8px;
+                font-size: 1.1rem;
+                text-decoration: none;
+                cursor: pointer;
+                transition: background 0.2s;
+
+                &:hover {
+                    background: $color-azul-oscuro;
+                }
+            }
+        }
+    }
+}
+
+// MEDIA QUERIES
+
+@media (max-width: 500px) {
+    .proyectos {
+        .proyectosContenedor {
+            .proyectoTarjeta {
+                .proyectoImgEscritorio {
+                    display: none;
+                }
+
+                .proyectoImgMovil {
+                    display: block;
+                    width: 100%;
+                    max-width: 700px;
+                    height: auto;
+                    margin-bottom: 1.5rem;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

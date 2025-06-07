@@ -1,0 +1,145 @@
+{
+  "navbar": {
+    "inicio": "Inicio",
+    "proyectos": "Proyectos",
+    "contacto": "Contacto"
+  },
+  "sobre-mi": {
+    "titulo": "SOBRE MI",
+    "descripcion": "Soy Desarrollador FrontEnd con experiencia en React.js y WordPress, enfocado en crear interfaces modernas, accesibles y optimizadas para la experiencia del usuario. Durante mi formación en Coderhouse, me destaqué en los cursos de JavaScript, React.js y WordPress, donde adquirí habilidades en el desarrollo de sitios web dinámicos y tiendas online con WooCommerce. Me apasiona transformar ideas en experiencias digitales funcionales, aplicando tecnologías como HTML5, CSS3, JavaScript y Bootstrap. También tengo experiencia en SEO técnico con Yoast SEO (meta descriptions, keywords, Open Graph), y en accesibilidad web siguiendo las pautas WCAG, para garantizar sitios inclusivos y bien posicionados.",
+    "cvBoton": "Mirá mi CV",
+    "cvUrl": "/pdfs/cvEulerJuanES.pdf"
+  },
+  "tecnologias": {
+    "titulo": "TECNOLOGÍAS"
+  },
+  "educacion": {
+    "titulo": "EDUCACIÓN",
+    "textoNota": "Nota final: ",
+    "textoTemario": "Temario: ",
+    "textoCertificado": "Ver certificado",
+    "wordpress": {
+      "titulo": "Curso de WordPress",
+      "institucion": "Coderhouse",
+      "fecha": "Enero a Febrero 2025",
+      "temas": [
+        "Entradas",
+        "Plugins",
+        "Temas",
+        "Child themes",
+        "Elementor",
+        "WooCommerce",
+        "Backups y servidores",
+        "Migración"
+      ]
+    },
+    "react": {
+      "titulo": "Curso de React.js",
+      "institucion": "Coderhouse",
+      "fecha": "Septiembre a Noviembre 2024",
+      "temas": [
+        "JSX y transpiling",
+        "Componentes",
+        "Promesas",
+        "Asincronía",
+        "Map",
+        "Consumo de APIs",
+        "Hooks",
+        "Children",
+        "Patrones",
+        "Routing y navegación",
+        "Eventos",
+        "Contexto",
+        "Técnicas de renderizado",
+        "Firebase"
+      ]
+    },
+    "javascript": {
+      "titulo": "Curso de JavaScript",
+      "institucion": "Coderhouse",
+      "fecha": "Junio a Agosto 2024",
+      "temas": [
+        "Sintaxis y variables",
+        "Control de flujos",
+        "Ciclos e iteraciones",
+        "Funciones",
+        "Objetos",
+        "Arrays",
+        "Funciones de orden superior",
+        "DOM",
+        "Eventos",
+        "Storage y JSON",
+        "Operadores avanzados",
+        "Librerías",
+        "Asincronía y promesas",
+        "AJAX y fetch",
+        "Frameworks",
+        "Node.js"
+      ]
+    },
+    "desarrollo-web": {
+      "titulo": "Curso de Desarrollo Web",
+      "institucion": "Coderhouse",
+      "fecha": "Febrero a Mayo 2024",
+      "temas": [
+        "HTML",
+        "CSS",
+        "Flexbox",
+        "Grids",
+        "Media queries",
+        "Pseudoclases y BEM",
+        "Frameworks",
+        "Bootstrap",
+        "Git",
+        "GitHub",
+        "SASS",
+        "Nesting",
+        "Partials",
+        "Animaciones",
+        "SEO",
+        "Servidores"
+      ]
+    }
+  },
+  "servicios": {
+    "titulo": "SERVICIOS",
+    "tarjetas": [
+      {
+        "titulo": "Desarrollo web a medida",
+        "descripcion": "Sitios modernos, rápidos y personalizados usando HTML, CSS, JavaScript y React. Diseño responsive y optimización para buscadores.",
+        "imgAlt": "Ilustración desarrollo web"
+      },
+      {
+        "titulo": "Sitios WordPress",
+        "descripcion": "Instalación, personalización y optimización de sitios WordPress. Ideal para blogs, webs institucionales y landing pages.",
+        "imgAlt": "Ilustración WordPress"
+      }
+    ],
+    "cta": "Querés un sitio web profesional? Contactame para pedir tu presupuesto sin compromiso!",
+    "boton": "HABLEMOS"
+  },
+  "proyectos": {
+    "titulo": "PROYECTOS",
+    "botonInfo": "Más información"
+  },
+  "proyectos-detalle": {
+    "volver": "← Volver a proyectos"
+  },
+  "footer": {
+    "derechos": "Todos los derechos reservados"
+  },
+  "contacto": {
+    "titulo": "CONTACTO",
+    "intro": "Si querés pedir un presupuesto, o contactarme para hacerme una oferta laboral, conectá conmigo en LinkedIn o enviame un mail!",
+    "horario": "Estoy disponible para reuniones días hábiles de 10:00 a 18:00 hs.",
+    "linkedin": "Conectá conmigo en LinkedIn",
+    "github": "Mirá mis repositorios en GitHub",
+    "mail": "Contactame vía mail"
+  },
+  "popup": {
+    "titulo": "Te gustó lo que viste?",
+    "mensaje": "Conectá conmigo en LinkedIn o enviame un mail antes de irte!",
+    "botonMail": "Mail",
+    "botonLinkedin": "LinkedIn"
+  }
+}

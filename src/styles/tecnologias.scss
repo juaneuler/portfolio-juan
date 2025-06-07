@@ -1,0 +1,89 @@
+@use './variables' as *;
+
+.tecnologias {
+    background-color: $color-negro;
+    color: $color-blanco;
+    margin: 20px;
+
+    h2 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 10px;
+        color: $color-negro-claro;
+        background-color: $color-blanco;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .tecnologiasContenedor {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 1.5rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .tecnologiasCarta {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1 1 18%;
+            max-width: 18%;
+            min-width: 200px;
+            background: $color-blanco;
+            border: 3px solid $color-TDE;
+            border-radius: 10px;
+            padding: 30px;
+            transition: transform 0.5s;
+
+            img {
+                width: 100%;
+                max-width: 120px;
+                height: auto;
+                aspect-ratio: 1 / 1;
+                object-fit: contain;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                color: $color-TDE;
+                font-size: 1.1rem;
+                font-weight: 700;
+            }
+
+            &:hover {
+                transform: scale(1.10);
+            }
+
+            // Media queries
+            // 4 tarjetas por fila
+            @media (max-width: 1200px) {
+                flex-basis: 22%;
+                max-width: 22%;
+            }
+
+            // 3 tarjetas por fila
+            @media (max-width: 900px) {
+                flex-basis: 30%;
+                max-width: 30%;
+            }
+
+            // 2 tarjetas por fila
+            @media (max-width: 700px) {
+                flex-basis: 45%;
+                max-width: 45%;
+            }
+
+            // 1 tarjeta por fila
+            @media (max-width: 509px) {
+                flex-basis: 90%;
+                max-width: 90%;
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+@use "./variables" as *;
+
+.educacion {
+    margin: 20px;
+
+    h2 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.2rem;
+        padding: 10px;
+        color: $color-negro-claro;
+        background-color: $color-blanco;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .educacionContenedor {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: stretch;
+        margin-top: 20px;
+
+        .educacionCarta {
+            flex: 1 1 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            max-width: 45%;
+            min-width: 250px;
+            background: $color-blanco;
+            border: 3px solid $color-TDE;
+            border-radius: 10px;
+            padding: 30px;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            p,
+            a {
+                text-align: center;
+                font-size: 1.1rem;
+            }
+
+            .educacionTemas {
+                columns: 2;
+                -webkit-columns: 2;
+                -moz-columns: 2;
+                column-gap: 1.5rem;
+                list-style: none;
+                padding: 0;
+                margin: 1rem 0;
+                text-align: left;
+
+
+                li {
+                    text-align: center;
+                }
+            }
+
+            .educacionCertificado {
+                display: inline-block;
+                padding: 10px 22px;
+                margin: 8px 8px 0 0;
+                border-radius: 8px;
+                font-size: 18px;
+                font-weight: 600;
+                text-decoration: none;
+                color: $color-blanco;
+                background-color: $color-azul-claro;
+                cursor: pointer;
+                transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+
+                &:hover {
+                    background-color: $color-azul-oscuro;
+                    box-shadow: 0 2px 8px rgba(34, 40, 49, 0.15);
+                }
+            }
+        }
+    }
+}
+
+// MEDIA QUERIES
+
+@media (max-width: 700px) {
+    .educacion {
+        .educacionContenedor {
+            .educacionCarta {
+                flex-basis: 90%;
+                max-width: 90%;
+
+                .educacionTemas {
+                    columns: 1;
+                    -webkit-columns: 1;
+                    -moz-columns: 1;
+                }
+            }
+        }
+    }
+}
