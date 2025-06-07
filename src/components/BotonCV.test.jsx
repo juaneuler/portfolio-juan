@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/react'
-import BotonCV from './botonCV'
+import BotonCV from './BotonCV'
 import { describe, it, expect } from 'vitest'
 
 describe('BotonCV', () => {

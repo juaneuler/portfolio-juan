@@ -8,6 +8,7 @@ const BotonCV = ({ texto, url }) => (
     rel="noopener noreferrer"
     className="botonCV"
     aria-label="Descargar CV"
+    data-testid="boton-cv"
   >
     {texto}
   </a>
