@@ -31,8 +31,10 @@ El portfolio muestra secciones como “Sobre mí”, “Proyectos”, “Educaci
 
 ## 🌐 Despliegue
 
-El sitio está desplegado en Vercel, accesible públicamente en:  
-https://tu-url-deploy.netlify.app
+El sitio está desplegado en Netlify y en Vercel, accesible públicamente en:  
+
+https://portfolio-juan-euler.netlify.app/
+https://portfolio-juan-eta.vercel.app/
 
 ## 💻 Para ver el proyecto localmente
 
