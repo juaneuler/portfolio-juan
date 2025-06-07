@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLanguage } from '../context/LanguageContext'
-import BotonCV from './botonCV'
+import BotonCV from './BotonCV'
 
 // Textos a renderizar
 import es from '../locales/es.json'
