@@ -76,7 +76,7 @@ const Contacto = () => {
         <div className="contactoTarjeta">
           <img src={outlook} alt="Email" />
           <a
-            href="mailto:juan.euler@hotmail.com"
+            href="mailto:juaneuler@hotmail.com"
             className="contactoBoton"
             aria-label='Enviar email a juaneuler@hotmail.com'
           >
