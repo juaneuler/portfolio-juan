@@ -62,12 +62,12 @@ portfolio-juan/
 ├── node_modules/
 ├── public/
 │   ├── favicon.ico
-│   ├── manifest.json
-│   ├── index.html
-│   └── img/           # Imágenes y PDFs (certificados, CVs)
+│   ├── site.webmanifest
+│   ├── pdfs/          # Certificados y CV's
+│   └── img/           # Imágenes y SVG's
 ├── src/
-│   ├── assets/        # Imágenes y SVGs usados en la app
-│   ├── components/    # Componentes React reutilizables
+│   ├── assets/        # Imágenes y SVG's
+│   ├── components/    # Componentes React
 │   ├── context/       # Contextos globales (idioma, loader)
 │   ├── data/          # Archivos JS con datos estáticos
 │   ├── firebase/      # Configuración de Firebase
@@ -76,7 +76,7 @@ portfolio-juan/
 │   ├── pages/         # Páginas principales (Home, Proyectos, Contacto, etc)
 │   ├── styles/        # Archivos SCSS de estilos
 │   └── tests/         # Setup y utilidades para tests
-├── .eslintrc          # Configuración de ESLint
+├── .eslint.config.js  # Configuración de ESLint
 ├── index.html         # HTML principal
 ├── package.json       # Dependencias y scripts
 ├── vite.config.js     # Configuración de Vite
