@@ -9,6 +9,8 @@ import sassLogo from "../assets/sassLogo.svg"
 import jsLogo from "../assets/javascriptLogo.svg"
 import reactLogo from "../assets/reactLogo.svg"
 import reactBootstrapLogo from "../assets/reactBootstrapLogo.svg"
+import viteLogo from "../assets/viteLogo.svg"
+import vitestLogo from "../assets/vitestLogo.svg"
 import firebaseLogo from "../assets/firebaseLogo.svg"
 import gitLogo from "../assets/gitLogo.svg"
 import githubLogo from "../assets/githubLogo.svg"
@@ -27,6 +29,8 @@ export const tecnologias = [
     {nombre: "JavaScript", logo: jsLogo},
     {nombre: "React", logo: reactLogo},
     {nombre: "React Bootstrap", logo: reactBootstrapLogo},
+    {nombre: "Vite", logo: viteLogo},
+    {nombre: "Vitest", logo: vitestLogo},
     {nombre: "Firebase", logo: firebaseLogo},
     {nombre: "Git", logo: gitLogo},
     {nombre: "GitHub", logo: githubLogo},
