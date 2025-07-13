@@ -77,10 +77,14 @@ const ProyectosDetalle = () => {
         )
     }
 
+    const tituloRenderizado = typeof proyecto.titulo === "string"
+        ? proyecto.titulo
+        : proyecto.titulo[language]
+
     return (
         <section className="proyectos">
             <div className="proyectoTarjeta detalle">
-                <h2 className="proyectoTitulo">{proyecto.titulo}</h2>
+                <h2 className="proyectoTitulo">{tituloRenderizado}</h2>
                 {esMovil && proyecto.imgCarruselMovil && proyecto.imgCarruselMovil.length > 0
                     ? <CarruselMovil imagenes={proyecto.imgCarruselMovil} />
                     : <Carrusel imagenes={proyecto.img} />

@@ -85,7 +85,9 @@ const Proyectos = () => {
                                 className="proyectoImg proyectoImgMovil"
                             />
                         )}
-                        <h3 className="proyectoTitulo">{proyecto.titulo}</h3>
+                        <h3 className="proyectoTitulo">{typeof proyecto.titulo === "string"
+                            ? proyecto.titulo
+                            : proyecto.titulo[language]}</h3>
                         <p className="proyectoDescripcion">{proyecto.descripcion[language]}</p>
                         <div className="proyectoTecnologias">
                             {proyecto.tecnologias.map((tec, i) => (
@@ -96,7 +98,10 @@ const Proyectos = () => {
                             ))}
                         </div>
                         <NavLink to={`/proyectos/${proyecto.slug}`} className="proyectoMasInfo"
-                        aria-label={`Ver detalles del proyecto ${proyecto.titulo}`}
+                            aria-label={`Ver detalles del proyecto ${typeof proyecto.titulo === "string"
+                                ? proyecto.titulo
+                                : proyecto.titulo[language]
+                                }`}
                         >
                             {t.botonInfo}
                         </NavLink>
