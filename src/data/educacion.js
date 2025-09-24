@@ -1,6 +1,14 @@
 // Este archivo tiene un array de objetos. Cada objeto tiene las propiedades a renderizar en el componente Educacion.jsx
 
 export const educacion = [
+    {
+    id: "angular",
+    titulo: "educacion.angular.titulo",
+    institucion: "educacion.angular.institucion",
+    nota: 10,
+    certificado: "/pdfs/certificadoAngular.pdf",
+    temas: "educacion.angular.temas"
+  },
   {
     id: "wordpress",
     titulo: "educacion.wordpress.titulo",
