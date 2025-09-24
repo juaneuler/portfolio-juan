@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import "../styles/portada.scss";
 
 const nombre = "JUAN EULER";
-const subtitulo = "FrontEnd Developer - React & WordPress";
+const subtitulo = "FrontEnd Developer - React - Angular - WordPress";
 
 const Portada = ({delay = 1700 }) => {
   const [mostrarCursor, setMostrarCursor] = useState(true);
