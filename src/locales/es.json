@@ -6,7 +6,7 @@
   },
   "sobre-mi": {
     "titulo": "SOBRE MI",
-    "descripcion": "Soy Desarrollador FrontEnd con experiencia en React.js y WordPress, enfocado en crear interfaces modernas, accesibles y optimizadas para la experiencia del usuario. Durante mi formación en Coderhouse, me destaqué en los cursos de JavaScript, React.js y WordPress, donde adquirí habilidades en el desarrollo de sitios web dinámicos y tiendas online con WooCommerce. Me apasiona transformar ideas en experiencias digitales funcionales, aplicando tecnologías como HTML5, CSS3, JavaScript y Bootstrap. También tengo experiencia en SEO técnico con Yoast SEO (meta descriptions, keywords, Open Graph), y en accesibilidad web siguiendo las pautas WCAG, para garantizar sitios inclusivos y bien posicionados.",
+    "descripcion": "Soy Desarrollador FrontEnd con experiencia en React.js, Angular y WordPress, enfocado en crear interfaces modernas, accesibles y optimizadas para la experiencia del usuario. Completé cursos de JavaScript, React.js, Angular y WordPress en Coderhouse, donde adquirí habilidades en el desarrollo de sitios web dinámicos y aplicaciones Single Page (SPA) con manejo de estado, rutas protegidas y formularios reactivos. Me apasiona transformar ideas en experiencias digitales funcionales, aplicando tecnologías como HTML5, CSS3, JavaScript, Bootstrap y Angular. También tengo experiencia en SEO técnico con Yoast SEO (meta descriptions, keywords, Open Graph), y en accesibilidad web siguiendo las pautas WCAG, para garantizar sitios inclusivos y bien posicionados.",
     "cvBoton": "Mirá mi CV",
     "cvUrl": "/pdfs/cvEulerJuanES.pdf"
   },
@@ -18,6 +18,27 @@
     "textoNota": "Nota final: ",
     "textoTemario": "Temario: ",
     "textoCertificado": "Ver certificado",
+    "angular": {
+      "titulo": "Curso de Angular",
+      "institucion": "Coderhouse",
+      "fecha": "Junio a Agosto 2025",
+      "temas": [
+        "TypeScript",
+        "Directivas",
+        "Módulos y Componentes",
+        "Decoradores",
+        "Librerías",
+        "Pipes",
+        "Directivas Personalizadas",
+        "RxJS",
+        "Routing y Navegación",
+        "Lazy Loading de Módulos",
+        "Rutas Child",
+        "Guards",
+        "Testing",
+        "Gestión de Estado con NgRx"
+      ]
+    },
     "wordpress": {
       "titulo": "Curso de WordPress",
       "institucion": "Coderhouse",
