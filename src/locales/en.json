@@ -6,7 +6,7 @@
   },
   "sobre-mi": {
     "titulo": "ABOUT ME",
-    "descripcion": "I'm a FrontEnd Developer with experience in React.js and WordPress, focused on creating modern, accessible, and user-centered interfaces. I stood out during my training at Coderhouse in the JavaScript, React.js, and WordPress courses, where I gained skills in building dynamic websites and online stores using WooCommerce. I'm passionate about turning ideas into functional digital experiences using technologies like HTML5, CSS3, JavaScript, and Bootstrap. I also have experience in technical SEO with Yoast SEO (meta descriptions, keywords, Open Graph), and in implementing web accessibility following WCAG guidelines to ensure inclusive and well-ranked websites.",
+    "descripcion": "I'm a FrontEnd Developer with experience in React.js, Angular, and WordPress, focused on creating modern, accessible, and user-centered interfaces. I completed courses in JavaScript, React.js, Angular, and WordPress at Coderhouse, where I gained skills in building dynamic websites and Single Page Applications (SPA) with state management, protected routes, and reactive forms. I'm passionate about turning ideas into functional digital experiences using technologies like HTML5, CSS3, JavaScript, Bootstrap, and Angular. I also have experience in technical SEO with Yoast SEO (meta descriptions, keywords, Open Graph), and in implementing web accessibility following WCAG guidelines to ensure inclusive and well-ranked websites.",
     "cvBoton": "Take a look at my CV",
     "cvUrl": "/pdfs/cvEulerJuanEN.pdf"
   },
@@ -18,6 +18,27 @@
     "textoNota": "Final grade: ",
     "textoTemario": "Topics: ",
     "textoCertificado": "View certificate",
+    "angular": {
+      "titulo": "Angular Course",
+      "institucion": "Coderhouse",
+      "fecha": "June to August 2025",
+      "temas": [
+        "TypeScript",
+        "Directives",
+        "Modules and Components",
+        "Decorators",
+        "Libraries",
+        "Pipes",
+        "Custom Directives",
+        "RxJS",
+        "Routing and Navigation",
+        "Lazy Loading of Modules",
+        "Child Routes",
+        "Guards",
+        "Testing",
+        "State Management with NgRx"
+      ]
+    },
     "wordpress": {
       "titulo": "WordPress Course",
       "institucion": "Coderhouse",
