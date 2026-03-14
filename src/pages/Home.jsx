@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useLoader } from '../context/LoaderContext'
 import Portada from '../components/Portada'
 import SobreMi from '../components/SobreMi'
 import Tecnologias from '../components/Tecnologias'
 import Educacion from '../components/Educacion'
-import Servicios from '../components/Servicios'
 import FadeInSection from '../components/FadeInSection'
 
 const Home = () => {
@@ -35,7 +34,6 @@ const Home = () => {
     return (
         <>
             <Portada delay={1700} />
-
             <FadeInSection>
                 <SobreMi />
             </FadeInSection>
@@ -44,9 +42,6 @@ const Home = () => {
             </FadeInSection>
             <FadeInSection>
                 <Educacion />
-            </FadeInSection>
-            <FadeInSection>
-                <Servicios />
             </FadeInSection>
         </>
     )
