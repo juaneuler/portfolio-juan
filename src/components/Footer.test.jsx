@@ -1,13 +1,26 @@
-import { screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import Footer from './Footer'
 import { describe, it, expect } from 'vitest'
+import { LanguageProvider } from '../context/LanguageContext'
+
+const customRender = (ui) => {
+  return render(
+    <LanguageProvider>
+      {ui}
+    </LanguageProvider>
+  )
+}
 
 describe('Footer', () => {
 
-    it('muestra el texto de copyright', () => {
+    it('muestra el texto de copyright con el año actual', () => {
         customRender(<Footer />)
+        
+        const currentYear = new Date().getFullYear().toString()
+        
         const footer = screen.getByRole('contentinfo')
-        expect(footer).toHaveTextContent('2025')
+        
+        expect(footer).toHaveTextContent(currentYear)
         expect(footer).toHaveTextContent('JUAN EULER')
     })
 

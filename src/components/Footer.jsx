@@ -1,4 +1,3 @@
-import React from 'react'
 import { useLanguage } from '../context/LanguageContext'
 import es from '../locales/es.json'
 import en from '../locales/en.json'
@@ -12,6 +11,8 @@ const texts = { es, en }
 const Footer = () => {
     const { language } = useLanguage()
     const t = texts[language].footer
+
+    const year = new Date().getFullYear();
 
     return (
         <footer className="footer">
@@ -34,7 +35,7 @@ const Footer = () => {
                     <img src={linkedinIcono} alt="LinkedIn" />
                 </a>
             </div>
-            <p>© 2025 | JUAN EULER | {t.derechos}</p>
+            <p>© {year} | JUAN EULER | {t.derechos}</p>
         </footer>
     )
 }
