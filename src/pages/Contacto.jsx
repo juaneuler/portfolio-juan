@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useLanguage } from '../context/LanguageContext'
 import { useLoader } from '../context/LoaderContext'
 
@@ -44,7 +44,6 @@ const Contacto = () => {
     <section className="contacto">
       <h2>{t.titulo}</h2>
       <p className="contactoIntro">{t.intro}</p>
-      <p className="contactoHorario">{t.horario}</p>
 
       <div className="contactoTarjetas">
         <div className="contactoTarjeta">
