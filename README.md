@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen)](#tests)
 
-Este es mi portfolio personal, desarrollado en React.js. Acá encontrarás información sobre mí, las tecnologías que uso, educación, servicios, proyectos y formas de contacto. El sitio está optimizado para SEO, es responsive y cuenta con animaciones suaves.
+Este es mi portfolio personal, desarrollado en React.js. Acá encontrarás información sobre mí, las tecnologías que uso, educación, proyectos y formas de contacto. El sitio está optimizado para SEO, es responsive y cuenta con animaciones suaves.
 
 ## 👤 Autor
 
