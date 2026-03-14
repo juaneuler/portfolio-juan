@@ -1,5 +1,3 @@
-import React from 'react'
-
 // Hoja de estilos
 import '../styles/tecnologias.scss'
 
