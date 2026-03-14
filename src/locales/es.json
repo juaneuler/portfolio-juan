@@ -122,23 +122,6 @@
       ]
     }
   },
-  "servicios": {
-    "titulo": "SERVICIOS",
-    "tarjetas": [
-      {
-        "titulo": "Desarrollo web a medida",
-        "descripcion": "Sitios modernos, rápidos y personalizados usando HTML, CSS, JavaScript y React. Diseño responsive y optimización para buscadores.",
-        "imgAlt": "Ilustración desarrollo web"
-      },
-      {
-        "titulo": "Sitios WordPress",
-        "descripcion": "Instalación, personalización y optimización de sitios WordPress. Ideal para blogs, webs institucionales y landing pages.",
-        "imgAlt": "Ilustración WordPress"
-      }
-    ],
-    "cta": "Querés un sitio web profesional? Contactame para pedir tu presupuesto sin compromiso!",
-    "boton": "HABLEMOS"
-  },
   "proyectos": {
     "titulo": "PROYECTOS",
     "botonInfo": "Más información"
@@ -151,16 +134,9 @@
   },
   "contacto": {
     "titulo": "CONTACTO",
-    "intro": "Si querés pedir un presupuesto, o contactarme para hacerme una oferta laboral, conectá conmigo en LinkedIn o enviame un mail!",
-    "horario": "Estoy disponible para reuniones días hábiles de 10:00 a 18:00 hs.",
+    "intro": "Tenés una propuesta interesante o alguna consulta? Hablemos!",
     "linkedin": "Conectá conmigo en LinkedIn",
     "github": "Mirá mis repositorios en GitHub",
     "mail": "Contactame vía mail"
-  },
-  "popup": {
-    "titulo": "Te gustó lo que viste?",
-    "mensaje": "Conectá conmigo en LinkedIn o enviame un mail antes de irte!",
-    "botonMail": "Mail",
-    "botonLinkedin": "LinkedIn"
   }
 }
