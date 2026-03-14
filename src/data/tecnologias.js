@@ -24,31 +24,37 @@ import githubLogo from "../assets/githubLogo.svg"
 import wpLogo from "../assets/wpLogo.svg"
 import elementorLogo from "../assets/elementorLogo.svg"
 import wcLogo from "../assets/wcLogo.svg"
+import aemLogo from "../assets/aemLogo.svg"
+import pythonLogo from "../assets/pythonLogo.svg"
+import framerMotionLogo from "../assets/framerMotionLogo.svg"
 
 
 // Exportación del array para usar en el componente
 
 export const tecnologias = [
-    {nombre: "HTML5", logo: htmlLogo},
-    {nombre: "CSS3", logo: cssLogo},
-    {nombre: "Bootstrap", logo: bootstrapLogo},
-    {nombre: "SASS", logo: sassLogo},
-    {nombre: "JavaScript", logo: jsLogo},
-    {nombre: "TypeScript", logo: tsLogo},
-    {nombre: "React", logo: reactLogo},
-    {nombre: "React Bootstrap", logo: reactBootstrapLogo},
-    {nombre: "Angular", logo: angularLogo},
-    {nombre: "RxJS", logo: rxjsLogo},
-    {nombre: "NgRx", logo: ngrxLogo},
-    {nombre: "Redux", logo: reduxLogo},
-    {nombre: "Vite", logo: viteLogo},
-    {nombre: "Vitest", logo: vitestLogo},
-    {nombre: "Karma", logo: karmaLogo},
-    {nombre: "Jasmine", logo: jasmineLogo},
-    {nombre: "Firebase", logo: firebaseLogo},
-    {nombre: "Git", logo: gitLogo},
-    {nombre: "GitHub", logo: githubLogo},
-    {nombre: "WordPress", logo: wpLogo},
-    {nombre: "Elementor", logo: elementorLogo},
-    {nombre: "WooCommerce", logo: wcLogo}
+    { nombre: "React", logo: reactLogo },
+    { nombre: "Angular", logo: angularLogo },
+    { nombre: "AEM", logo: aemLogo },
+    { nombre: "TypeScript", logo: tsLogo },
+    { nombre: "JavaScript", logo: jsLogo },
+    { nombre: "Python", logo: pythonLogo },
+    { nombre: "HTML5", logo: htmlLogo },
+    { nombre: "CSS3", logo: cssLogo },
+    { nombre: "SASS", logo: sassLogo },
+    { nombre: "Framer Motion", logo: framerMotionLogo },
+    { nombre: "Bootstrap", logo: bootstrapLogo },
+    { nombre: "React Bootstrap", logo: reactBootstrapLogo },
+    { nombre: "WordPress", logo: wpLogo },
+    { nombre: "Elementor", logo: elementorLogo },
+    { nombre: "WooCommerce", logo: wcLogo },
+    { nombre: "Git", logo: gitLogo },
+    { nombre: "GitHub", logo: githubLogo },
+    { nombre: "Firebase", logo: firebaseLogo },
+    { nombre: "Vite", logo: viteLogo },
+    { nombre: "Vitest", logo: vitestLogo },
+    { nombre: "Karma", logo: karmaLogo },
+    { nombre: "Jasmine", logo: jasmineLogo },
+    { nombre: "RxJS", logo: rxjsLogo },
+    { nombre: "NgRx", logo: ngrxLogo },
+    { nombre: "Redux", logo: reduxLogo }
 ]
