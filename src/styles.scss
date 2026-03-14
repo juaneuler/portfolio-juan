@@ -14,11 +14,3 @@
     font-family: 'Roboto', sans-serif;
     background-color: $color-negro;
 }
-
-// Blur al resto del sitio cuando se dispare el modal del componente PopUp.jsx
-
-body.blur-activo .contenidoPrincipal {
-    filter: blur(4px) brightness(0.7);
-    transition: filter 0.3s ease;
-    overflow: hidden;
-}
