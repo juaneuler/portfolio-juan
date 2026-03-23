@@ -1,12 +1,7 @@
-import React from 'react'
 import { useLanguage } from '../context/LanguageContext'
 import BotonCV from './BotonCV'
-
-// Textos a renderizar
 import es from '../locales/es.json'
 import en from '../locales/en.json'
-
-// Hoja de estilos
 import '../styles/sobre-mi.scss'
 
 const texts = { es, en }

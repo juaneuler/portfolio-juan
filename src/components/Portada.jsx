@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react';
-
-// Hoja de estilos
+import { useEffect, useState } from 'react';
 import "../styles/portada.scss";
 
 const nombre = "JUAN EULER";
@@ -12,7 +10,6 @@ const Portada = ({delay = 1700 }) => {
   const [escribiendo, setEscribiendo] = useState(false);
 
   useEffect(() => {
-    // El cursor se muestra solo durante 1 segundo
     const timer = setTimeout(() => {
       setMostrarCursor(false);
       setEscribiendo(true);
