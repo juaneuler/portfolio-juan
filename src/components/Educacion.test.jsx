@@ -1,54 +1,60 @@
-import { screen } from '@testing-library/react'
-import Educacion from './Educacion'
-import { describe, it, expect, vi } from 'vitest'
+import { render, screen } from "@testing-library/react";
+import Educacion from "./Educacion";
+import { describe, it, expect, vi } from "vitest";
 
-// Mock del contexto de idioma
-vi.mock('../context/LanguageContext', () => ({
-  useLanguage: () => ({ language: 'es' })
-}))
+vi.mock("../context/LanguageContext", () => ({
+  useLanguage: () => ({ language: "es" }),
+}));
 
-// Mock del archivo de datos
-vi.mock('../data/educacion', () => ({
+vi.mock("../data/educacion", () => ({
   educacion: [
     {
-      id: 'wordpress',
+      id: "wordpress",
       nota: 9,
-      certificado: '/certificado-wordpress.pdf'
+      certificado: "/certificado-wordpress.pdf",
     },
     {
-      id: 'react',
-      nota: 10,
-      certificado: '/certificado-react.pdf'
+      id: "google-analytics",
+      certificado: "https://skillshop.credential.net/prueba",
     },
-    {
-      id: 'javascript',
-      nota: 10,
-      certificado: '/certificado-js.pdf'
-    },
-    {
-      id: 'desarrollo-web',
-      nota: 9,
-      certificado: '/certificado-web.pdf'
-    }
-  ]
-}))
+  ],
+}));
 
-describe('Educacion', () => {
-  it('renderiza los títulos y datos de todos los cursos en español', () => {
-    customRender(<Educacion />)
-    // Título principal
-    expect(screen.getByRole('heading', { name: /educación/i })).toBeInTheDocument()
-    // Títulos de cursos
-    expect(screen.getByRole('heading', { name: /curso de wordpress/i })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /curso de react\.js/i })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /curso de javascript/i })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /curso de desarrollo web/i })).toBeInTheDocument()
-    // Notas finales
-    expect(screen.getAllByText(/nota final:/i).length).toBe(4)
-    // Certificados
-    expect(screen.getByRole('link', { name: /ver certificado de curso de wordpress/i })).toHaveAttribute('href', '/certificado-wordpress.pdf')
-    expect(screen.getByRole('link', { name: /ver certificado de curso de react\.js/i })).toHaveAttribute('href', '/certificado-react.pdf')
-    expect(screen.getByRole('link', { name: /ver certificado de curso de javascript/i })).toHaveAttribute('href', '/certificado-js.pdf')
-    expect(screen.getByRole('link', { name: /ver certificado de curso de desarrollo web/i })).toHaveAttribute('href', '/certificado-web.pdf')
-  })
-})
+describe("Educacion", () => {
+  it("renderiza correctamente cursos con temario y certificaciones sin nota", () => {
+    render(<Educacion />);
+
+    expect(
+      screen.getByRole("heading", { name: /educación/i }),
+    ).toBeInTheDocument();
+
+    expect(
+      screen.getByRole("heading", { name: /curso de wordpress/i }),
+    ).toBeInTheDocument();
+    expect(screen.getByText(/nota final: 9/i)).toBeInTheDocument();
+    expect(screen.getByText(/temario:/i)).toBeInTheDocument();
+
+    expect(
+      screen.getByRole("heading", {
+        name: /certificación de google analytics/i,
+      }),
+    ).toBeInTheDocument();
+
+    const notaAnalytics = screen.queryByText(/nota final:/i, {
+      selector: ".educacionCarta:nth-child(2) p",
+    });
+    expect(notaAnalytics).not.toBeInTheDocument();
+
+    const temarioAnalytics = screen.queryByText(/temario:/i, {
+      selector: ".educacionCarta:nth-child(2) p",
+    });
+    expect(temarioAnalytics).not.toBeInTheDocument();
+
+    const links = screen.getAllByRole("link", { name: /ver certificado/i });
+    expect(links[0]).toHaveAttribute("href", "/certificado-wordpress.pdf");
+    expect(links[1]).toHaveAttribute(
+      "href",
+      "https://skillshop.credential.net/prueba",
+    );
+  });
+});
