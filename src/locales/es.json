@@ -18,6 +18,12 @@
     "textoNota": "Nota final: ",
     "textoTemario": "Temario: ",
     "textoCertificado": "Ver certificado",
+    "google-analytics": {
+      "titulo": "Certificación de Google Analytics",
+      "institucion": "Google Skillshop",
+      "fecha": "Obtenido: Abril 2026",
+      "expiracion": "Vence: Abril 2027"
+    },
     "angular": {
       "titulo": "Curso de Angular",
       "institucion": "Coderhouse",

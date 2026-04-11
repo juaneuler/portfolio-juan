@@ -1,7 +1,13 @@
 // Este archivo tiene un array de objetos. Cada objeto tiene las propiedades a renderizar en el componente Educacion.jsx
 
 export const educacion = [
-    {
+  {
+    id: "google-analytics",
+    titulo: "educacion.google-analytics.titulo",
+    institucion: "educacion.google-analytics.institucion",
+    certificado: "https://skillshop.credential.net/207ce104-f10a-4e2c-b53d-7fcd977a7c10#acc.uIpFmHYQ"
+  },
+  {
     id: "angular",
     titulo: "educacion.angular.titulo",
     institucion: "educacion.angular.institucion",

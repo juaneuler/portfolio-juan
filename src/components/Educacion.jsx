@@ -1,49 +1,76 @@
-import React from 'react'
+import React from "react";
 
 //Hoja de estilos
-import '../styles/educacion.scss'
+import "../styles/educacion.scss";
 
 // Contexto
-import { useLanguage } from '../context/LanguageContext'
+import { useLanguage } from "../context/LanguageContext";
 
 // Archivo Js que tiene el contenido a renderizar
-import { educacion } from '../data/educacion'
+import { educacion } from "../data/educacion";
 
 // Textos a renderizar
-import es from '../locales/es.json'
-import en from '../locales/en.json'
+import es from "../locales/es.json";
+import en from "../locales/en.json";
 
-const texts = { es, en }
+const texts = { es, en };
 
 const Educacion = () => {
-    const { language } = useLanguage()
-    const t = texts[language]["educacion"]
+  const { language } = useLanguage();
+  const t = texts[language]["educacion"];
 
-    return (
-        <section className="educacion">
-            <h2>{t.titulo}</h2>
-            <div className="educacionContenedor">
-                {educacion.map((curso, index) => {
-                    const datos = t[curso.id]
+  return (
+    <section className="educacion">
+      <h2>{t.titulo}</h2>
+      <div className="educacionContenedor">
+        {educacion.map((curso, index) => {
+          const datos = t[curso.id];
 
-                    return (
-                        <div key={index} className="educacionCarta">
-                            <h3>{datos.titulo}</h3>
-                            <p className="educacionInstitucion">{datos.institucion} - {datos.fecha}</p>
-                            <p className="educacionNota">{t.textoNota}{curso.nota}</p>
-                            <p className="educacionTemario">{t.textoTemario}</p>
-                            <ul className="educacionTemas">
-                                {datos.temas.map((tema, i) => {
-                                    return <li key={i}>{tema}</li>
-                                })}
-                            </ul>
-                            <a href={curso.certificado} className="educacionCertificado" target="_blank" rel="noopener noreferrer" aria-label={`Ver certificado de ${datos.titulo}`}>{t.textoCertificado}</a>
-                        </div>
-                    )
-                })}
+          return (
+            <div key={index} className="educacionCarta">
+              <h3>{datos.titulo}</h3>
+              <p className="educacionInstitucion">
+                {datos.institucion} - {datos.fecha}
+              </p>
+
+              {curso.nota && (
+                <p className="educacionNota">
+                  {t.textoNota}
+                  {curso.nota}
+                </p>
+              )}
+
+              {datos.expiracion && (
+                <p className="educacionExpiracion">
+                  <strong>{datos.expiracion}</strong>
+                </p>
+              )}
+
+              {datos.temas && (
+                <>
+                  <p className="educacionTemario">{t.textoTemario}</p>
+                  <ul className="educacionTemas">
+                    {datos.temas.map((tema, i) => (
+                      <li key={i}>{tema}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+
+              <a
+                href={curso.certificado}
+                className="educacionCertificado"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t.textoCertificado}
+              </a>
             </div>
-        </section>
-    )
-}
+          );
+        })}
+      </div>
+    </section>
+  );
+};
 
-export default Educacion
+export default Educacion;

@@ -18,6 +18,12 @@
     "textoNota": "Final grade: ",
     "textoTemario": "Topics: ",
     "textoCertificado": "View certificate",
+    "google-analytics": {
+      "titulo": "Google Analytics",
+      "institucion": "Google Skillshop",
+      "fecha": "Issue Date: April 2026",
+      "expiracion": "Expiry Date: April 2027"
+    },
     "angular": {
       "titulo": "Angular Course",
       "institucion": "Coderhouse",
